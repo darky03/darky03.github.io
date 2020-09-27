@@ -45,7 +45,12 @@
 	<body>
 		<div id="overlay_main" style="display: none;">
 			<div id="overlaybg" style="position: fixed; left: 0; top: 0; height: 0; width: 100%; height: 100%; background-color: white; opacity: 0.8; z-index: 1;"></div>
-			<div id="overlayfg" style="position: fixed; top: 30%; left: 35%; height: 0; width: 100%; height: 100%; z-index: 2; font-size: 30px;">Player '<span id="winnerName"></span>' has won the game!</div>
+			<div id="overlayfg" style="position: fixed; top: 38%; left: 36%; height: 0; z-index: 2; font-size: 30px;">
+				<div>Player '<span id="winnerName"></span>' has won the game!</div>
+				<div style="text-align: center;">
+					<button class="btn-normal" id="restartGame">Restart</button>
+				</div>
+			</div>
 
 		</div>
 		<nav class="header">

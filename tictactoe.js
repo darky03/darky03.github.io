@@ -24,6 +24,9 @@ $(document).ready(function() {
 			checkWinner();
 		}
 	});
+	$("#restartGame").click(function(){ 
+		location.reload();
+	});
 	function checkWinner() {
 		let patterns = 
 		[
