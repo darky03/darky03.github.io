@@ -74,7 +74,8 @@ $(document).ready(function() {
 			for(let i = 0; i < patterns[wpi].length; i++) {
 				idStr = patterns[wpi][i][0] + "x" +  patterns[wpi][i][1];
 				console.log("ID String: " + idStr);
-				$("td#" + idStr).css("background-color","red");
+
+				$("td#" + idStr).css("background-color",old == "O" ? "blue" : "red");
 			}
 		}
 		else{

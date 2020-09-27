@@ -12,14 +12,34 @@
 			{
 
 				margin: 0;
-				padding: 30px;
-
-				/*ont-size: 20px;*/
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				font-size: 25px;
+			}
+			.mid-box {
 				border: 1px solid black;
 			}
-
+			.mid-upper-box {
+				border-right: 1px solid black;
+				border-left: 1px solid black;
+			}
+			.mid-lower-box {
+				border-right: 1px solid black;
+				border-left: 1px solid black;
+			}
+			.mid-left-box {
+				border-bottom: 1px solid black;
+				border-top: 1px solid black;
+			}
+			.mid-right-box {
+				border-bottom: 1px solid black;
+				border-top: 1px solid black;
+			}
 		</style>
+		<link rel="stylesheet" href="./style.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 		<script src="./tictactoe.js"></script>
 	</head>
 	<body>
@@ -28,12 +48,9 @@
 			<div id="overlayfg" style="position: fixed; top: 30%; left: 35%; height: 0; width: 100%; height: 100%; z-index: 2; font-size: 30px;">Player '<span id="winnerName"></span>' has won the game!</div>
 
 		</div>
-		<div>
-			<font size = "6">
-				Tic Tac Toe game designed in leisure
-			</font>
-		</div>
-		<hr>
+		<nav class="header">
+			<h2>Tic Tac Toe game designed in leisure</h2>
+		</nav>
 		<br/>
 		<div id="playerturn" style="font-size: 20px;"></div>
 		
@@ -41,17 +58,17 @@
 			<table cellspacing=0>
 				<tr>
 					<td id="0x0"></td>
-					<td id="0x1"></td>
+					<td id="0x1" class="mid-upper-box"></td>
 					<td id="0x2"></td>
 				</tr>
 				<tr>
-					<td id="1x0"></td>
-					<td id="1x1"></td>
-					<td id="1x2"></td>
+					<td id="1x0" class="mid-left-box"></td>
+					<td id="1x1" class="mid-box"></td>
+					<td id="1x2" class="mid-right-box"></td>
 				</tr>
 				<tr>
 					<td id="2x0"></td>
-					<td id="2x1"></td>
+					<td id="2x1" class="mid-lower-box"></td>
 					<td id="2x2"></td>
 				</tr>
 			</table>

@@ -35,3 +35,9 @@ ul.listbox > li.maintext
 	margin: 10px;
 	padding: 10px;
 }
+h3,h2
+{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
